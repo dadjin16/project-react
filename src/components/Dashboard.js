@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
+import Header from "./includes/Header";
+import Main from "./includes/Main";
+import Footer from "./includes/Footer";
+
 class Dashboard extends Component {
     render() {
         return (
-            <h1>This is component Dashboard</h1>
+            <section>
+                <Header/>
+                <Main/>
+                <Footer/>
+            </section>
         )
     }
 }

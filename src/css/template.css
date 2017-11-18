@@ -1,0 +1,146 @@
+/* HTML5 Template */
+
+
+/************ TABLE OF CONTENTS ***************
+1.  Google Fonts
+2.  Reset
+3.  Global
+4.  Block Header
+5.  Block Main
+6.  Block Footer
+**********************************************/
+
+/*** 
+
+====================================================================
+	Google Fonts
+====================================================================
+
+ ***/
+
+ @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+ 
+ /*** 
+ 
+ ====================================================================
+     Reset
+ ====================================================================
+ 
+  ***/
+ 
+ @media (min-width:1200px) {
+     .container {
+         padding: 0px;
+     }
+ }
+ 
+ * {
+     margin: 0px;
+     padding: 0px;
+     border: none;
+     outline: none;
+ }
+ 
+ 
+ /*** 
+ 
+ ====================================================================
+     Global style
+ ====================================================================
+ 
+ ***/
+ html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+ body {
+     font-size: 14px;
+     color: #848484;
+     line-height: 1.8em;
+     font-weight: 400;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center top;
+     -webkit-font-smoothing: antialiased;
+     font-family: 'Roboto Condensed', sans-serif;
+     padding-bottom: 6rem;
+     min-height: 100%;
+     position: relative;
+ }
+
+ a {
+    color: #fff; 
+    text-decoration: none;
+     cursor: pointer;
+ }
+ 
+ a:hover,
+ a:focus
+{
+     color:orange;
+     text-decoration: none;
+     outline: none;
+ }
+ 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     margin: 0px;
+     font-family: 'Roboto Condensed';
+ }
+ 
+ input,
+ button,
+ select,
+ textarea {
+    font-family: 'Roboto Condensed';
+ }
+ 
+ ul,
+ li {
+     list-style: none;
+     padding: 0px;
+     margin: 0px;
+ }
+  /*** 
+ 
+ ====================================================================
+     Block Header
+ ====================================================================
+ 
+ ***/
+ .block-header{
+     background-color:black;
+ }
+ .navbar{
+     margin-bottom: 0px;
+ }
+  /*** 
+ 
+ ====================================================================
+     Block Main
+ ====================================================================
+ 
+ ***/
+ .block-content{
+     padding: 15px 0px;
+ }
+ /*** 
+ 
+ ====================================================================
+     Block Footer
+ ====================================================================
+ 
+ ***/
+ .block-footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+ }

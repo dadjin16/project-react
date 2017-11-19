@@ -1,11 +1,14 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import '../../css/template.css';
 import React, { Component } from 'react'
+import Slider from "../Pages/Slider";
 
 class Header extends Component {
+    
     render() {
+        const get_img={
+            name: 'webpack'
+        }
         return (
-            <div className="block-header">
+            <section className="block-header">
                 
                 <div className="container">
                     
@@ -13,7 +16,7 @@ class Header extends Component {
                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             
                             <div className="navbar">
-                                <a className="navbar-brand" href="#">Logo</a>
+                                <a className="navbar-brand logo" href="#"><img src={`../../images/${get_img.name}.png`} alt={this.props.name}/></a>
                                 <ul className="nav navbar-nav">
                                     <li className="active">
                                         <a href="#">Home</a>
@@ -34,8 +37,8 @@ class Header extends Component {
                     </div>
                     
                 </div>
-                
-            </div>
+                <Slider/>
+            </section>
         )
     }
 }
